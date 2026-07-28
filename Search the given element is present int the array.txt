@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main{
+    public static boolean searchkey(int arr[],int size,int key){
+        for (int i=0;i<size;i++){
+            if(arr[i]==key){
+                return true;
+            }
+        }return false;
+    }
+    public static void main(String[] args){
+        Scanner obj=new Scanner(System.in);
+        int size=obj.nextInt();
+        int arr[]=new int[size];
+        for(int i=0;i<size;i++){
+            arr[i]=obj.nextInt();
+        }
+        int key=obj.nextInt();
+        if(searchkey(arr,size,key)){
+            System.out.print("Found");
+        }
+        else{
+             System.out.print("Not Found");
+        }
+    }
+}
