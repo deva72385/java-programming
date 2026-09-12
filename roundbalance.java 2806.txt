@@ -1,0 +1,7 @@
+class Solution {
+    public int accountBalanceAfterPurchase(int purchaseAmount) {
+        int round=(((purchaseAmount+5)/10)*10);
+        int balance=100-round;
+        return balance;
+    }
+}
