@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();//123
+        int remove=sc.nextInt();//2
+         
+         while(num>0){
+           int result=0;
+           int div=num%10;//2
+           int a=1;//10
+           if(remove!=div){
+               result=result+div*a;//0+3*1=3;3+1*10;
+               a=a*10;
+}num=num/10;
+System.out.print(result);
+}
+}
